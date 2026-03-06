@@ -234,37 +234,43 @@ try {
       {/* Header */}
         <div style={{
           borderBottom: "1px solid #1a1a22",
-          padding: "20px 32px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
           background: "#0a0a0f",
           position: "sticky",
           top: 0,
           zIndex: 10,
-          width: "100%",  // ← ADD THIS
+          width: "100%",
         }}>
-        <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
-          <span style={{
-            fontFamily: "'Bebas Neue', sans-serif",
-            fontSize: "22px",
-            letterSpacing: "0.06em",
-            color: "#fff",
-          }}>API ERROR ANALYZER</span>
-          <span style={{
-            fontFamily: "'DM Mono', monospace",
-            fontSize: "10px",
-            color: "#ff6b00",
-            letterSpacing: "0.15em",
-            background: "rgba(255,107,0,0.1)",
-            border: "1px solid rgba(255,107,0,0.3)",
-            padding: "2px 8px",
-          }}>AI-POWERED</span>
+          <div style={{
+            maxWidth: "960px",
+            margin: "0 auto",
+            padding: "20px 24px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
+          }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
+              <span style={{
+                fontFamily: "'Bebas Neue', sans-serif",
+                fontSize: "22px",
+                letterSpacing: "0.06em",
+                color: "#fff",
+              }}>API ERROR ANALYZER</span>
+              <span style={{
+                fontFamily: "'DM Mono', monospace",
+                fontSize: "10px",
+                color: "#ff6b00",
+                letterSpacing: "0.15em",
+                background: "rgba(255,107,0,0.1)",
+                border: "1px solid rgba(255,107,0,0.3)",
+                padding: "2px 8px",
+              }}>AI-POWERED</span>
+            </div>
+            <div style={{ fontFamily: "'DM Mono'", fontSize: "10px", color: "#444", letterSpacing: "0.1em" }}>
+              PASTE → ANALYZE → FIX
+            </div>
+          </div>
         </div>
-        <div style={{ fontFamily: "'DM Mono'", fontSize: "10px", color: "#444", letterSpacing: "0.1em" }}>
-          PASTE → ANALYZE → FIX
-        </div>
-      </div>
 
       <div style={{ maxWidth: "960px", margin: "0 auto", padding: "40px 24px 80px", width: "100%" }}>
 
