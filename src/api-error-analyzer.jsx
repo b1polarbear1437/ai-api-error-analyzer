@@ -91,35 +91,21 @@ export default function App() {
     setResult(null);
 
     try {
-  const response = await fetch("/api/analyze", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    model: "claude-sonnet-4-20250514",
-    max_tokens: 1000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: "user", content: `Analyze this API error or log:\n\n${input}` }]
-  })
-});
-
-if (!response.ok) {
-  const errorText = await response.text();
-  console.error("Anthropic API error:", errorText);
-  throw new Error(errorText);
-}
+      const response = await fetch("/api/analyze", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: SYSTEM_PROMPT,
+          messages: [{ role: "user", content: `Analyze this API error or log:\n\n${input}` }]
+        })
+      });
 
       const data = await response.json();
-      const text = data.content?.[0]?.text || "";
+      const text = data.content?.map(b => b.text || "").join("") || "";
       const cleaned = text.replace(/```json|```/g, "").trim();
-      let parsed;
-
-try {
-  parsed = JSON.parse(cleaned);
-} catch (err) {
-  console.error("JSON parsing failed:", cleaned);
-  setError("AI returned invalid JSON. Try again.");
-  return;
-}
+      const parsed = JSON.parse(cleaned);
       setResult(parsed);
     } catch (e) {
       setError("Failed to analyze. Make sure you pasted a valid error message or log.");
