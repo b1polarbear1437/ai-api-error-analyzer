@@ -13,6 +13,9 @@
 
 **[https://ai-api-error-analyzer.vercel.app](https://ai-api-error-analyzer.vercel.app)**
 
+<img width="1920" height="1859" alt="image" src="https://github.com/user-attachments/assets/bf58a3cd-788d-44f3-9ee3-8c1c5181580b" />
+
+
 ---
 
 ## 📌 What It Does
