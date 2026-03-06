@@ -150,6 +150,11 @@ try {
       fontFamily: "'DM Mono', 'Courier New', monospace",
       color: "#e8e4d9",
       padding: "0",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      width: "100%",
+      overflowX: "hidden",
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap');
@@ -260,7 +265,7 @@ try {
         </div>
       </div>
 
-      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "40px 24px 80px" }}>
+      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "40px 24px 80px", width: "100%" }}>
 
         {/* Hero */}
         <div style={{ marginBottom: "40px" }}>
