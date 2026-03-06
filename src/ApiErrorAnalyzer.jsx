@@ -146,6 +146,7 @@ try {
   return (
     <div style={{
       minHeight: "100vh",
+      width: "100vw",
       background: "#0a0a0f",
       fontFamily: "'DM Mono', 'Courier New', monospace",
       color: "#e8e4d9",
@@ -153,7 +154,6 @@ try {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      width: "100%",
       overflowX: "hidden",
     }}>
       <style>{`
@@ -231,7 +231,6 @@ try {
         }
       `}</style>
 
-      {/* Header */}
       {/* Header */}
         <div style={{
           borderBottom: "1px solid #1a1a22",
