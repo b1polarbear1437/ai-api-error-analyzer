@@ -1,16 +1,56 @@
-# React + Vite
+# AI API Error Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-powered tool that helps developers diagnose API errors quickly.
 
-Currently, two official plugins are available:
+Paste an HTTP error, stack trace, or API log and receive:
+- Error classification
+- Root cause explanation
+- Troubleshooting steps
+- Example fixes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+https://ai-api-error-analyzer.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Detects common API errors:
+  - 400 Bad Request
+  - 401 Unauthorized
+  - 403 Forbidden
+  - 404 Not Found
+  - 429 Rate Limit
+  - 500 Server Error
+- Extracts JSON from API logs
+- Provides plain-English explanations
+- Developer-friendly UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- Git
+- GitHub
+- Vercel
+
+## Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/b1polarbear1437/ai-api-error-analyzer.git
+
+Install dependencies:
+Bash
+npm install
+npm run dev
+
+Open
+http://localhost:5173
+
+Screenshot:
+<img width="1920" height="1469" alt="image" src="https://github.com/user-attachments/assets/7748dbbe-30bf-40c0-9644-ac93f655b4be" />
+
+Author
+Reynaldo Valdez Jr
