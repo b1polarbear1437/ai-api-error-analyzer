@@ -232,17 +232,19 @@ try {
       `}</style>
 
       {/* Header */}
-      <div style={{
-        borderBottom: "1px solid #1a1a22",
-        padding: "20px 32px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        background: "#0a0a0f",
-        position: "sticky",
-        top: 0,
-        zIndex: 10,
-      }}>
+      {/* Header */}
+        <div style={{
+          borderBottom: "1px solid #1a1a22",
+          padding: "20px 32px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          background: "#0a0a0f",
+          position: "sticky",
+          top: 0,
+          zIndex: 10,
+          width: "100%",  // ← ADD THIS
+        }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
           <span style={{
             fontFamily: "'Bebas Neue', sans-serif",
