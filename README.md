@@ -13,7 +13,8 @@
 
 **[https://ai-api-error-analyzer.vercel.app](https://ai-api-error-analyzer.vercel.app)**
 
-<img width="1920" height="1859" alt="image" src="https://github.com/user-attachments/assets/bf58a3cd-788d-44f3-9ee3-8c1c5181580b" />
+<img width="1920" height="1400" alt="image" src="https://github.com/user-attachments/assets/3ca1b66d-9fb0-45a9-9490-20812cefc01c" />
+
 
 
 ---
@@ -156,6 +157,17 @@ With $5 in credits you get approximately **~650 requests**.
 GitHub: [@b1polarbear1437](https://github.com/b1polarbear1437)
 
 ---
+
+## 🌐 Network Note
+
+This app is hosted on Vercel. Some ISPs (particularly in the Philippines such as Converge ICT and Globe) may block access due to DNS filtering.
+
+**If the site doesn't load, try one of these:**
+- Change your DNS to `8.8.8.8` (Google) or `1.1.1.1` (Cloudflare)
+- Install the [Cloudflare WARP app](https://1.1.1.1/) (free, no data limit)
+- Use a VPN such as ProtonVPN or Windscribe
+
+The app works correctly — this is an ISP-level network restriction, not an issue with the application itself.
 
 ## 📄 License
 
