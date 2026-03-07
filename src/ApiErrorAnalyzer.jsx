@@ -274,31 +274,32 @@ try {
 
       <div style={{ maxWidth: "960px", margin: "0 auto", padding: "40px 24px 80px", width: "100%" }}>
 
-       {/* Hero */}
-          <div style={{ marginBottom: "40px" }}>
-            <h1 style={{
-              fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: "clamp(42px, 8vw, 88px)",
-              lineHeight: 0.92,
-              letterSpacing: "0.02em",
-              color: "#fff",
-              marginBottom: "16px",
-            }}>
-              DECODE ANY<br />
-              <span style={{ color: "#ff6b00" }}>API ERROR</span><br />
-              INSTANTLY
-            </h1>
-            <p style={{
-              fontFamily: "'DM Mono', monospace",
-              fontSize: "13px",
-              color: "#666",
-              maxWidth: "520px",
-              lineHeight: 1.7,
-              letterSpacing: "0.03em",
-            }}>
-              Paste an HTTP error, stack trace, or API log. Get a plain-English breakdown with root causes and step-by-step fixes — no guessing required.
-            </p>
-          </div>
+      {/* Hero */}
+        <div style={{ marginBottom: "40px", textAlign: "center" }}>
+          <h1 style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontSize: "clamp(42px, 8vw, 88px)",
+            lineHeight: 0.92,
+            letterSpacing: "0.02em",
+            color: "#fff",
+            marginBottom: "16px",
+          }}>
+            DECODE ANY<br />
+            <span style={{ color: "#ff6b00" }}>API ERROR</span><br />
+            INSTANTLY
+          </h1>
+          <p style={{
+            fontFamily: "'DM Mono', monospace",
+            fontSize: "13px",
+            color: "#666",
+            maxWidth: "520px",
+            lineHeight: 1.7,
+            letterSpacing: "0.03em",
+            margin: "0 auto",
+          }}>
+            Paste an HTTP error, stack trace, or API log. Get a plain-English breakdown with root causes and step-by-step fixes — no guessing required.
+          </p>
+        </div>
 
         {/* Example Pills */}
         <div style={{ marginBottom: "20px" }}>
